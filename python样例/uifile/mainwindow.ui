@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>806</width>
+    <height>562</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QFrame" name="frame">
+      <property name="cursor">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>806</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>project</string>
+    </property>
+    <widget class="QMenu" name="menuopen">
+     <property name="title">
+      <string>open</string>
+     </property>
+     <addaction name="actionQgs_Project"/>
+     <addaction name="actioncsv"/>
+    </widget>
+    <addaction name="menuopen"/>
+    <addaction name="actionimport_file"/>
+   </widget>
+   <widget class="QMenu" name="menutools">
+    <property name="title">
+     <string>tools</string>
+    </property>
+    <addaction name="actionprocess01"/>
+   </widget>
+   <widget class="QMenu" name="menuview">
+    <property name="title">
+     <string>layer view</string>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menuview"/>
+   <addaction name="menutools"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QDockWidget" name="dockWidget">
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionZoomIn"/>
+   <addaction name="actionZoomOut"/>
+  </widget>
+  <action name="actionimport_file">
+   <property name="text">
+    <string>import file</string>
+   </property>
+  </action>
+  <action name="actionprocess01">
+   <property name="text">
+    <string>process01</string>
+   </property>
+  </action>
+  <action name="actionQgs_Project">
+   <property name="text">
+    <string>Qgs Project</string>
+   </property>
+  </action>
+  <action name="actioncsv">
+   <property name="text">
+    <string>csv</string>
+   </property>
+  </action>
+  <action name="actionZoomIn">
+   <property name="icon">
+    <iconset>
+     <normalon>../../../../../userdata/Pictures/c#/放大.bmp</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>放大</string>
+   </property>
+  </action>
+  <action name="actionZoomOut">
+   <property name="icon">
+    <iconset>
+     <normalon>../../../../../userdata/Pictures/c#/缩小.bmp</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>缩小</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
